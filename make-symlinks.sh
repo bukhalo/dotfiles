@@ -10,3 +10,4 @@ make_symlink () {
 }
 
 make_symlink .gitconfig
+make_symlink .gitignore
