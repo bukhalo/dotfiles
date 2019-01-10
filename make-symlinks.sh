@@ -11,3 +11,4 @@ make_symlink () {
 
 make_symlink .gitconfig
 make_symlink .gitignore
+make_symlink .zshrc
