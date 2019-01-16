@@ -2,6 +2,9 @@
 .idea/
 .vscode/
 
+# nodeJS packages
+node_modules/
+
 # Compiled Python files
 *.pyc
 
