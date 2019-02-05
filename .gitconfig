@@ -1,6 +1,6 @@
 [user]
-  name = Aleksandr Bukhalo
-  email = aleksandr@bukhalo.com
+	name = Aleksandr Bukhalo
+	email = aleksandr@bukhalo.com
 
 [alias]
   # git change-commits GIT_COMMITTER_NAME "old name" "new name"
@@ -11,3 +11,8 @@
 
 [core]
   excludesfile = ~/.gitignore
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
