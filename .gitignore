@@ -2,8 +2,21 @@
 .idea/
 .vscode/
 
-# nodeJS packages
+### JavaScript development
+# Dependency directories
 node_modules/
+bower_components/
+jspm_packages/
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+# Optional npm cache directory
+.npm
+# next.js build output
+.next
+# nuxt.js build output
+.nuxt
 
 # Compiled Python files
 *.pyc
