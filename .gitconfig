@@ -3,7 +3,9 @@
 	email = aleksandr@bukhalo.com
 
 [alias]
-	# git change-commits GIT_COMMITTER_NAME "old name" "new name"
+	# Change commit data. Examples:
+	# git change-commits GIT_COMMITTER_NAME "<Old Name>" "<New Name>" -f # change committer name
+	# git change-commits GIT_AUTHOR_EMAIL "old@email.com" "new@email.com" -f HEAD~10..HEAD # force change the email for only the last 10 commits
 	change-commits = "!f() { VAR=$1; OLD=$2; NEW=$3; shift 3; git filter-branch --env-filter \"if [[ \\\"$`echo $VAR`\\\" = '$OLD' ]]; then export $VAR='$NEW'; fi\" $@; }; f "
 
 	# from https://help.github.com/articles/remove-sensitive-data
