@@ -2,7 +2,7 @@
 
 # define variables
 HOME_DIR=$HOME
-CURRENT_DIR=$PWD
+CURRENT_DIR=$PWD/home
 
 # make symbolic link to home directory
 symlink() {
