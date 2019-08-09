@@ -21,6 +21,8 @@ then
   symlink .npmrc
   symlink .oh-my-zsh
   symlink .zshrc
+  # use separate .editorconfig folder for exclude IDE conflicts
+  ln -s "$PWD/editor-config/.editorconfig" "$HOME_DIR/.editorconfig"
   echo "Done"
 elif [ "$1" == 'un' ] || [ "$1" = 'uninstall' ]
 then
@@ -29,6 +31,7 @@ then
   unlink .npmrc
   unlink .oh-my-zsh
   unlink .zshrc
+  unlink .editorconfig
   echo "Done"
 else
   echo "No command found"
