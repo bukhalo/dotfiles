@@ -5,12 +5,31 @@ HOME_DIR=$HOME
 CURRENT_DIR=$PWD
 
 # make symbolic link to home directory
-make_symlink () {
+symlink() {
   ln -s "$CURRENT_DIR/$1" "$HOME_DIR/$1"
 }
 
-make_symlink .gitconfig
-make_symlink .gitignore
-make_symlink .npmrc
-make_symlink .oh-my-zsh
-make_symlink .zshrc
+# remove symbolic links
+unlink() {
+  rm "$HOME_DIR/$1"
+}
+
+if [ "$1" == 'i' ] || [ "$1" = 'install' ]
+then
+  symlink .gitconfig
+  symlink .gitignore
+  symlink .npmrc
+  symlink .oh-my-zsh
+  symlink .zshrc
+  echo "Done"
+elif [ "$1" == 'un' ] || [ "$1" = 'uninstall' ]
+then
+  unlink .gitconfig
+  unlink .gitignore
+  unlink .npmrc
+  unlink .oh-my-zsh
+  unlink .zshrc
+  echo "Done"
+else
+  echo "No command found"
+fi
