@@ -1,6 +1,10 @@
 # ⚙️ My laptop configuration
 
 ## Installation
+Clone repository:
+
+`git clone --recurse-submodules -j8 git@github.com:bukhalo/dotfiles.git`
+
 Make bootstrap script executable:
 
 `chmod +x ./bootstrap.sh`
