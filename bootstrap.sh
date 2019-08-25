@@ -18,6 +18,7 @@ if [ "$1" == 'i' ] || [ "$1" = 'install' ]
 then
   symlink .gitconfig
   symlink .gitignore
+  symlink .nvm
   symlink .npmrc
   symlink .oh-my-zsh
   symlink .zshrc
@@ -28,6 +29,7 @@ elif [ "$1" == 'un' ] || [ "$1" = 'uninstall' ]
 then
   unlink .gitconfig
   unlink .gitignore
+  unlink .nvm
   unlink .npmrc
   unlink .oh-my-zsh
   unlink .zshrc
