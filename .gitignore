@@ -1,0 +1,6 @@
+# Ignore ssh keys
+home/.ssh/**/*rsa*
+home/.ssh/**/*.pem
+
+# Ignore ssh known hosts
+home/.ssh/known_hosts

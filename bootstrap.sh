@@ -16,6 +16,7 @@ unlink() {
 
 if [ "$1" == 'i' ] || [ "$1" = 'install' ]
 then
+  symlink .ssh
   symlink .gitconfig
   symlink .gitignore
   symlink .nvm
@@ -27,6 +28,7 @@ then
   echo "Done"
 elif [ "$1" == 'un' ] || [ "$1" = 'uninstall' ]
 then
+  unlink .ssh
   unlink .gitconfig
   unlink .gitignore
   unlink .nvm
