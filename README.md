@@ -1,9 +1,11 @@
-# ⚙️ My laptop configuration
+# ⚙️ My workstation configuration
 
 ## Installation
 Clone repository:
 
-`git clone --recurse-submodules -j8 git@github.com:bukhalo/dotfiles.git`
+```bash
+git clone --recurse-submodules -j8 git@github.com:bukhalo/dotfiles.git ~/.dotfiles
+```
 
 SSH
 ```bash
